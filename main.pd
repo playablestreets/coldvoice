@@ -88,6 +88,7 @@
 #X obj 610 192 / 3.3;
 #X obj 610 216 expr 1 - $f1;
 #X msg 349 127 0.1;
+#X obj 434 259 r pot;
 #X connect 1 0 30 0;
 #X connect 1 0 31 0;
 #X connect 3 0 79 0;
@@ -152,6 +153,7 @@
 #X connect 77 0 78 0;
 #X connect 78 0 75 0;
 #X connect 79 0 27 0;
+#X connect 80 0 27 0;
 #X restore 276 183 pd mapping;
 #X f 16;
 #X obj 32 416 cnv 19 370 250 empty empty empty 20 12 0 12 #feffc6 #404040 0;
