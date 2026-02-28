@@ -3,7 +3,7 @@
 #X declare -path ./bop/babs;
 #X declare -path ../../pd;
 #X obj 32 14 cnv 19 370 40 empty empty plantsOS\ 🥶\ coldvoice 70 20 0 16 #c6ffc7 #e3c6ff 0;
-#X obj 338 32 nbx 4 17 -1e+37 1e+37 0 1 version empty version 0 -10 0 12 #c6ffc7 #000000 #000000 15 256;
+#X obj 338 32 nbx 4 17 -1e+37 1e+37 0 1 version empty version 0 -10 0 12 #c6ffc7 #000000 #000000 17 256;
 #X obj 32 70 cnv 19 370 150 empty empty empty 20 12 0 12 #e3c6ff #404040 0;
 #X obj 32 244 cnv 19 370 150 empty empty empty 20 12 0 12 #c6feff #404040 0;
 #X text 37 248 VOICES;
@@ -153,7 +153,7 @@
 #X connect 76 0 77 0;
 #X connect 77 0 75 0;
 #X connect 79 0 27 0;
-#X restore 276 183 pd mapping;
+#X restore 268 81 pd mapping;
 #X f 16;
 #X obj 435 422 declare -path ./bop, f 24;
 #X obj 45 866 dac~, f 39;
@@ -284,7 +284,8 @@
 #X obj 46 666 *~;
 #X obj 338 673 *~;
 #X obj 196 756 expr 1- $f1;
-#X msg 471 364 io create oled io_ssd1306;
+#X msg 489 363 io create oled io_ssd1306 0x3C;
+#X msg 518 165 id -1;
 #X connect 10 0 52 0;
 #X connect 12 0 21 0;
 #X connect 13 0 20 0;
@@ -319,4 +320,4 @@
 #X connect 51 0 13 0;
 #X connect 52 0 12 0;
 #X connect 53 0 45 0;
-#X connect 54 0 35 0;
+#X connect 55 0 31 0;
