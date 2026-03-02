@@ -1,4 +1,4 @@
-#N canvas 897 30 793 1037 12;
+#N canvas 897 15 793 1037 12;
 #X declare -path ./bop;
 #X declare -path ./bop/babs;
 #X obj 35 91 declare -path ./bop;
@@ -138,7 +138,6 @@
 #A saved octaves 3;
 #A saved velocity 0.888;
 #A saved duration 0.992857;
-#X obj 488 281 bop.ui;
 #X connect 3 0 5 0;
 #X connect 5 0 4 0;
 #X connect 6 0 3 0;
@@ -189,4 +188,3 @@
 #X connect 59 0 60 0;
 #X connect 60 0 52 0;
 #X connect 60 1 52 1;
-#X connect 61 0 44 1;
