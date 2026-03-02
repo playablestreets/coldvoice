@@ -1,4 +1,4 @@
-#N canvas 31 52 678 1037 12;
+#N canvas 897 30 793 1037 12;
 #X declare -path ./bop;
 #X declare -path ./bop/babs;
 #X obj 35 91 declare -path ./bop;
@@ -63,7 +63,7 @@
 #A saved mode 0;
 #A saved sample 0;
 #A saved tune 0;
-#A saved root 60;
+#A saved root 50;
 #A saved loop 0;
 #A saved loop-start 0;
 #A saved loop-length 1;
@@ -84,7 +84,7 @@
 #X obj 319 512 babs.scale 0.5 1 0 1;
 #X msg 287 656 strum \$1;
 #X obj 288 731 bop.strum;
-#A saved strum 0.00621116;
+#A saved strum 0.0310559;
 #A saved chord 0;
 #A saved shuffle 1;
 #A saved root 0;
@@ -131,13 +131,14 @@
 #X obj 1214 461 babs.scale 0.5 1 0 1;
 #X msg 1182 605 strum \$1;
 #X obj 1096 684 bop.strum;
-#A saved strum 0.00621116;
+#A saved strum 0.068323;
 #A saved chord 0;
 #A saved shuffle 1;
 #A saved root 0;
 #A saved octaves 3;
 #A saved velocity 0.888;
 #A saved duration 0.992857;
+#X obj 488 281 bop.ui;
 #X connect 3 0 5 0;
 #X connect 5 0 4 0;
 #X connect 6 0 3 0;
@@ -188,3 +189,4 @@
 #X connect 59 0 60 0;
 #X connect 60 0 52 0;
 #X connect 60 1 52 1;
+#X connect 61 0 44 1;
