@@ -1,4 +1,4 @@
-#N canvas 649 37 852 1052 12;
+#N canvas 1920 32 1728 1057 12;
 #X declare -path ./bop;
 #X declare -path ./bop/babs;
 #X obj 35 91 declare -path ./bop;
@@ -92,7 +92,7 @@
 #X floatatom 297 275 5 0 0 0 - - - 0;
 #X msg 255 602 strum \$1;
 #X obj 419 511 bop.strum;
-#A saved strum 0.819876;
+#A saved strum 0.956522;
 #A saved chord 2;
 #A saved shuffle 1;
 #A saved root 48;
@@ -114,6 +114,11 @@
 #X obj 213 475 babs.scale 0 0.5 0 1;
 #X obj 309 357 babs.scale 0.5 1 1 0;
 #X msg 1194 653 pack coldvoice_samplepack;
+#X obj 790 444 < 0.001;
+#X obj 790 478 change;
+#X obj 792 542 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X obj 790 508 sel 0 1;
+#X msg 791 575 stop;
 #X connect 2 0 4 0;
 #X connect 4 0 3 0;
 #X connect 5 0 2 0;
@@ -135,6 +140,7 @@
 #X connect 24 0 23 0;
 #X connect 25 0 22 1;
 #X connect 26 0 27 0;
+#X connect 26 0 63 0;
 #X connect 27 0 28 0;
 #X connect 27 1 29 0;
 #X connect 28 0 15 0;
@@ -172,3 +178,9 @@
 #X connect 60 0 54 0;
 #X connect 61 0 56 0;
 #X connect 62 0 7 1;
+#X connect 63 0 64 0;
+#X connect 64 0 66 0;
+#X connect 65 0 67 0;
+#X connect 66 1 65 0;
+#X connect 67 0 7 1;
+#X connect 67 0 16 1;
